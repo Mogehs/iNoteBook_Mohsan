@@ -120,7 +120,7 @@ const updateNote = async () => {
     });
     const noteData= await responce.json()
     if (responce.ok) {
-      alert("Note Updated");
+      toast.success(noteData.message)
       setisShow(false);
       getNotes();
       toast.error(noteData.message)
