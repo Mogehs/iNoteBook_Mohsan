@@ -49,7 +49,7 @@ function Register() {
         toast.success(data.message)
       } else {
         toast.error(data.message)
-        alert(data.message || 'Something went wrong!');
+        
       }
     } catch (error) {
       
