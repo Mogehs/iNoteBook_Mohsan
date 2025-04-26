@@ -49,6 +49,9 @@ function Login() {
       toast.error("Network Error")
     }
   };
+  const moveToResister= async ()=>{
+    navigate('/register')
+  }
   return (
    <>
    <div className='min-w-full max-h-dvh flex justify-center md:items-center '>
@@ -72,6 +75,7 @@ function Login() {
     name='password'
     className='w-full outline-1 outline-white rounded-lg' />
     <button className='p-2  bg-[#1c2c4c] rounded-lg  hover:bg-sky-600 cursor-pointer' onClick={handleSubmit}>Login </button>
+    <p className='text-sky-600 hover:cursor-pointer hover:text-sky-400'onClick={moveToResister} >if you don't account?</p>
 
     </form>
  </div>
