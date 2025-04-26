@@ -9,7 +9,7 @@ const connectDb = require("./utilits/db");
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "https://i-note-book-mohsan.vercel.app/",
+  origin: "https://i-note-book-mohsan.vercel.app",
   methods: "GET,POST,PUT,DELETE,PATCH",
   credentials: true,
 };
